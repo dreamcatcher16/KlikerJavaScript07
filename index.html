@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Todo Lista</title>
+</head>
+
+<body>
+  <h1>Šta sve treba uraditi?</h1>
+
+  <div id="container">
+    <!-- 
+      input polje text tipa omogućava tekstualni unos korisnika
+      placeholder - kratko uputstvo korisniku šta to treba uneti u okviru polja
+      autocomplete - da li želimo da nam pretraživač nudi automatsko popunjavanje (predloge)
+    -->
+    <input type="text" class="input" id="input" placeholder="Unesite stavku" autocomplete="off" />
+
+    <!-- deo gde ćemo postaviti sve naše obaveze u vidu li elemenata -->
+    <ul class="todos" id="todos"></ul>
+  </div>
+
+  <!-- prikazujemo mininalno uputstvo korisniku -->
+  <small>
+    Levi klik da biste promenili status.
+    <br>
+    Desni klik da biste obrisali stavku.
+  </small>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
